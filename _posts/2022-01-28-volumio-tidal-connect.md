@@ -57,15 +57,11 @@ $ cat /usr/ifi/ifi-tidal-release/pa_devs/devices
 ## Tidal Connect 서비스 설정
 
 ```
-sudo nano /lib/systemd/system/ifi-streamer-tidal-connect.service
+$ sudo nano /lib/systemd/system/ifi-streamer-tidal-connect.service
 ```
 
 메모장에 복사해둔 디바이스명으로 설정(추가)한다.  
 형식은 --playback-device "디바이스명" \ 이다.
-
-```
---playback-device "snd_rpi_hifiberry_dac: HifiBerry DAC HiFi pcm5102a-hifi-0 (hw:2,0)" \
-```
 
 ![volumio-tidal-service](/img/volumio-tidal-service.png)
 
