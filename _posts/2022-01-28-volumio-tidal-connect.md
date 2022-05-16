@@ -34,7 +34,7 @@ $ curl -sSL https://raw.githubusercontent.com/shawaj/HiTide/main/install.sh | su
 Tidal Connect 설치가 예전버전(?)이라 그런지 MPD(Music Player Daemon)가 삭제되어 다시 설치해야 한다.
 
 ```
-$ sudo apt-get install mpd
+$ sudo apt install mpd
 ```
 
 ## Tidal Connect 연결 디바이스 찾기
@@ -61,7 +61,8 @@ $ sudo nano /lib/systemd/system/ifi-streamer-tidal-connect.service
 ```
 
 메모장에 복사해둔 디바이스명으로 설정(추가)한다.  
-형식은 --playback-device "디바이스명" \ 이다.
+형식은 --playback-device "디바이스명" \ 이다.  
+DAC이 MQA를 지원하면 --enable-mqa-passthrough true \ 로 설정하면 된다.
 
 ![volumio-tidal-service](/img/volumio-tidal-service.png)
 
@@ -74,7 +75,7 @@ $ sudo nano /etc/rc.local
 라즈베리파이 부팅시 백그라운드 서비스로 실행할 수 있도록 설정(추가)한다.
 
 ```
-systemctl start ifi-streamer-tidal-connect.service &
+$ systemctl start ifi-streamer-tidal-connect.service &
 ```
 
 ![volumio-tidal-start](/img/volumio-tidal-start.png)
@@ -88,17 +89,17 @@ systemctl start ifi-streamer-tidal-connect.service &
 참고. 라즈베리파이 보드 및 버전확인
 
 ```
-cat /proc/device-tree/model
+$ cat /proc/device-tree/model
 ```
 
 참고. MPD 상태확인
 
 ```
-systemctl status mpd -l
+$ systemctl status mpd -l
 ```
 
 참고. 시스템 로그확인
 
 ```
-sudo journalctl -f
+$ sudo journalctl -f
 ```
