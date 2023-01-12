@@ -37,7 +37,7 @@ database-name: heroku_fcd419078efa524
 
 ### Spring Boot 프로젝트 생성
 
-[start.spring.io](https://start.spring.io/) 또는 사용하는 IDE에서 프로젝트를 생성한다.  
+[start.spring.io](https://start.spring.io/) 또는 사용하는 IDE에서 jar 패키징으로 프로젝트를 생성한다.  
 Heroku를 이용하기 위해 특별하게 설정할 것은 없다.  
 간단히 테스트를 위한 프로젝트라 운영환경을 구분하지 않고 환경설정 파일(application.yml)에 port를 80으로 했다.
 
@@ -62,6 +62,21 @@ server:
   servlet:
     session:
       tracking-modes: COOKIE
+```
+
+### Heroku 환경을 위한 세팅
+
+프로젝트 실행을 위한 파일을 생성한다.  
+프로젝트 루트 폴더에 Procfile 이라는 확장자 없는 파일명을 생성하고 실행옵션을 작성한다.
+
+```
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar target/hello-heroku-0.1.jar
+```
+
+Heroku가 Java 1.8이 기본이라 프로젝트에 사용한 OpenJDK 11로 설정하기 위해 프로젝트 루트 폴더에 system.properties 파일을 생성하고 작성한다.
+
+```
+java.runtime.version=11
 ```
 
 ### Bing 배경화면 및 Google 폰트 활용
@@ -113,7 +128,12 @@ git commit -am "commit message"
 git push heroku master
 ```
 
-터미널에서 배포로그를 볼 수 있고, 완료되면 제공된 도메인에서 확인해 볼 수 있다.
+터미널에서 배포로그를 볼 수 있고, 완료되면 제공된 도메인에서 확인해 볼 수 있다.  
+배포가 정상적으로 완료해도 경로를 찾을 수 없다는 오류가 나오면 dyno 옵션을 지정해 준다.
+
+```
+heroku ps:scale web=1
+```
 
 ### 어플리케이션 확인
 
