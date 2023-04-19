@@ -112,7 +112,8 @@ url-pretty: "https://parkbongil.github.io/" # eg. "deanattali.com/beautiful-jeky
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-140239368-1"
+# google_analytics: "UA-140239368-1"
+google_analytics: "G-MMGEKV306S"
 
 # Google Tag Manager ID
 gtm: "GTM-WLXPVQ4"
