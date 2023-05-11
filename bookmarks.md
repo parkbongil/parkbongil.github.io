@@ -34,4 +34,16 @@ JavaScript, CSS, SWF, images 등의 public CDN
 [인터넷 민원발급 불가 프린터 목록](http://www.minwon.go.kr/new_info/customer/AA090_info_customer_printer_list.jsp)  
 프린터 구매할 때 꼭 확인해야 하는 것
 
-{% include google_adsense.html %}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9297036862850960" crossorigin="anonymous"></script>
+<!-- parkbongil.github.io -->
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9297036862850960"
+     data-ad-slot="1991150547"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
