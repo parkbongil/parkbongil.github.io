@@ -88,4 +88,4 @@ sudo kill -9 $pid
 ```
 
 인증서를 자동으로 갱신하려면 crontab을 활용해서 위의 과정을 쉘로 작성하면 될 듯 한데 당연히 상용 서비스에서는 이렇게 하면 안되므로 귀찮아 지면 적용 해봐야 겠다.  
-확인 : [https://oraclecloud.baenam.com](https://oraclecloud.baenam.com)
+확인 : [https://oci.baenam.com](https://oci.baenam.com)

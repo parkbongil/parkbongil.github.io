@@ -10,7 +10,7 @@ OpenJDK 배포판 중에서 개발할 때 빌드속도가 가장 빠른듯
 [Ninite](https://ninite.com/)  
 프리웨어 선택시 고민하지 말고 이 중에서 선택하는 것이 좋음
 
-[jsDelivr](https://jsDelivr/)  
+[jsDelivr](https://jsDelivr.com/)  
 JavaScript, CSS, SWF, images 등의 public CDN  
 간단히 테스트할 때 엄청 편리할 듯
 

@@ -58,5 +58,5 @@ public class ServletConfig {
 ```
 
 기한제한 없이 가상서버호스팅을 무료로 제공하는 [Oracle Cloud Free Tier](https://www.oracle.com/kr/cloud/free/)로 간단히 테스트 해볼 수 있다.  
-메인페이지: [http://oraclecloud.baenam.com](http://oraclecloud.baenam.com)  
-DB접속페이지: [http://oraclecloud.baenam.com/testdb](http://oraclecloud.baenam.com/testdb)
+메인페이지: [http://oci.baenam.com](http://oci.baenam.com)  
+DB접속페이지: [http://oci.baenam.com/testdb](http://oci.baenam.com/testdb)
