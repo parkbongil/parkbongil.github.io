@@ -64,8 +64,6 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
-      {% include comments.html %}
-
       <ul class="pagination blog-pager">
         {% if page.previous.url %}
         <li class="page-item previous">
@@ -84,6 +82,7 @@ layout: base
         </li>
         {% endif %}
       </ul>
+      {% include comments.html %}
     </div>
   </div>
 </main>

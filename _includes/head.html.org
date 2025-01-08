@@ -61,7 +61,8 @@
   {% include gtag.html %}
   {% include gtm_head.html %}
   {% include google_analytics.html %}
-  {% include google_adsense.html %}
+  {% include cloudflare_analytics.html %}
+  {% include mathjax.html %}
 
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}

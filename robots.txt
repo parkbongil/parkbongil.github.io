@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://parkbongil.github.io/sitemap.xml
