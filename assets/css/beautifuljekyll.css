@@ -1135,3 +1135,15 @@ pre {
   background-color: #3950a2;
   border-color: #364b98;
 }
+
+@media (min-width: 768px) {
+  .post-heading {
+    margin-top: 1.875rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .post-heading {
+    margin-top: 0.938rem;
+  }
+}
