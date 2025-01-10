@@ -46,10 +46,10 @@ public class ServletConfig {
         factory.addDeploymentInfoCustomizers(deploymentInfo -> {
             deploymentInfo.addSecurityConstraint(
                 new SecurityConstraint()
-                	.addWebResourceCollection(new WebResourceCollection().addUrlPattern("/*"))
-                    .setTransportGuaranteeType(TransportGuaranteeType.CONFIDENTIAL)
-                    .setEmptyRoleSemantic(SecurityInfo.EmptyRoleSemantic.PERMIT))
-                	.setConfidentialPortManager(exchange -> sslPort);
+                  .addWebResourceCollection(new WebResourceCollection().addUrlPattern("/*"))
+                  .setTransportGuaranteeType(TransportGuaranteeType.CONFIDENTIAL)
+                  .setEmptyRoleSemantic(SecurityInfo.EmptyRoleSemantic.PERMIT))
+                  .setConfidentialPortManager(exchange -> sslPort);
         });
 
         return factory;
